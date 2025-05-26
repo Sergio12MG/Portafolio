@@ -1,0 +1,20 @@
+/* Asegurarnos de que todos los botones tengan el mismo estilo */
+::ng-deep .p-toolbar .p-button {
+  margin: 0 !important; /* Eliminamos márgenes innecesarios */
+}
+
+/* Estilo específico para el botón "Contacto" */
+::ng-deep .p-toolbar .p-button.p-button-sm {
+  margin-left: 0.5rem !important; /* Ajusta según sea necesario */
+}
+
+#logo-header {
+  background-image: url('../../assets/images/Logo-SM.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80px;
+  width: 70px;
+  height: 50px;
+  margin-left: 1rem;
+}
