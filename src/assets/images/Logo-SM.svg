@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0%" y="0%"
+	width="100%" height="100%"
+	viewBox="0 0 24.0 24.0"
+	enable-background="new 0 0 24.0 24.0"
+	xml:space="preserve">
+<defs>
+<filter id="glow14" x="-200%" y="-200%" width="600%" height="600%" >
+	<feOffset result="offOut" in="SourceGraphic" dx="0.0" dy="0.0" />
+	<feGaussianBlur result="blurOut" in="offOut" stdDeviation="0.39550126" />
+	<feFlood flood-color="#00AAFF" flood-opacity="1.000" result="flood"/>
+	<feComposite in="flood" in2="blurOut" operator="in" result="blendOut0"/>
+	<feBlend in="blendOut0" in2="blendOut0" result="blendOut1" mode="normal" />
+	<feBlend in="SourceGraphic" in2="blendOut1" mode="normal" />
+</filter>
+
+<filter id="glow41" x="-200%" y="-200%" width="600%" height="600%" >
+	<feOffset result="offOut" in="SourceGraphic" dx="0.0" dy="0.0" />
+	<feGaussianBlur result="blurOut" in="offOut" stdDeviation="0.37678513" />
+	<feFlood flood-color="#00AFFF" flood-opacity="1.000" result="flood"/>
+	<feComposite in="flood" in2="blurOut" operator="in" result="blendOut0"/>
+	<feBlend in="blendOut0" in2="blendOut0" result="blendOut1" mode="normal" />
+	<feBlend in="SourceGraphic" in2="blendOut1" mode="normal" />
+</filter>
+
+</defs>
+	<path
+		fill="#34C9FF"
+		stroke="#000000"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.34199348"
+		filter="url(#glow14)"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M4.59,14.65L2.68,16.72L12.38,16.72L7.57,9.57L12.38,9.57L13.40,7.65L3.84,7.61L8.45,14.65L4.59,14.65z"/>
+	<path
+		fill="#34C9FF"
+		stroke="#000000"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.3380323"
+		filter="url(#glow41)"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M11.36,13.99L12.40,15.59L14.90,10.04L14.90,15.82L16.61,15.81L19.50,10.67L19.50,15.76L18.45,16.84L20.97,16.84L20.97,7.61L19.59,7.61L16.24,13.75L16.24,7.65L14.41,7.65L11.36,13.99z"/>
+</svg>
