@@ -1,0 +1,278 @@
+#about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+#gradient-intro {
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 98, 255, 0) 0%, rgba(0, 98, 255, 0.1) 25%, rgba(0, 98, 255, 0.508) 100%);
+}
+
+#sub-cont-1 {
+    padding: 0 15rem;
+}
+
+.cont-txt {
+    margin: 15px;
+    margin-top: 0;
+    padding: 20px;
+    padding-top: 0;
+    width: 35%;
+    h1 {
+        font-size: 3rem;
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+}
+
+#tech-stack-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    width: 100%;
+    h2 {
+        font-size: 2rem;
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
+}
+
+#web {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+#lenguajes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+#bds {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.logo-tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+}
+
+#html-logo {
+    background-image: url('../../assets/images/html-logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-color: rgb(239, 101, 42);
+    box-shadow: inset 0 0 40px rgba(239, 101, 42, 0.5), 0 0 40px rgba(239, 101, 42, 0.088);
+}
+
+#html-logo:hover {
+    box-shadow: 0 0 70px rgba(239, 101, 42, 0.7);
+}
+
+#css-logo {
+    background-image: url('../../assets/images/css-logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-color: rgb(35, 135, 194);
+    box-shadow: inset 0 0 40px rgba(35, 135, 194, 0.5), 0 0 40px rgba(35, 135, 194, 0.088);
+}
+
+#css-logo:hover {
+    box-shadow: 0 0 70px rgba(35, 135, 194, 0.7);
+}
+
+#js-logo {
+    background-image: url('../../assets/images/javascript-logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-color: rgb(255, 222, 37);
+    box-shadow: inset 0 0 40px rgba(255, 222, 37, 0.5), 0 0 40px rgba(255, 222, 37, 0.088);
+}
+
+#js-logo:hover {
+    box-shadow: 0 0 70px rgba(255, 222, 37, 0.7);
+}
+
+#php-logo {
+    background-image: url('../../assets/images/php-logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    border-color: rgb(137, 147, 190);
+    box-shadow: inset 0 0 40px rgba(137, 147, 190, 0.5), 0 0 40px rgba(137, 147, 190, 0.088);
+}
+
+#php-logo:hover {
+    box-shadow: 0 0 70px rgba(137, 147, 190, 0.7);
+}
+
+#angular-logo {
+    background-image: url('../../assets/images/angular-logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-color: rgb(226, 50, 55);
+    box-shadow: inset 0 0 40px rgba(226, 50, 55, 0.5), 0 0 40px rgba(226, 50, 55, 0.088);
+}
+
+#angular-logo:hover {
+    box-shadow: 0 0 70px rgba(226, 50, 55, 0.7);
+}
+
+#django-logo {
+    background-image: url('../../assets/images/django-logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    border-color: rgb(43, 169, 119);
+    box-shadow: inset 0 0 40px rgba(43, 169, 119, 0.5), 0 0 40px rgba(43, 169, 119, 0.088);
+}
+
+#django-logo:hover {
+    box-shadow: 0 0 70px rgba(43, 169, 119, 0.7);
+}
+
+#nodejs-logo {
+    background-image: url('../../assets/images/nodejs-logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-color: rgb(0, 212, 134);
+    box-shadow: inset 0 0 40px rgba(0, 212, 134, 0.5), 0 0 40px rgba(0, 212, 134, 0.088);
+}
+
+#nodejs-logo:hover {
+    box-shadow: 0 0 70px rgba(0, 212, 134, 0.7);
+}
+
+#express-logo {
+    h2 {
+        font-size: 50px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    border-color: rgb(255, 255, 255);
+    box-shadow: inset 0 0 40px rgba(178, 178, 178, 0.5), 0 0 40px rgba(178, 178, 178, 0.088);
+    cursor: default;
+}
+
+#express-logo:hover {
+    box-shadow: 0 0 70px rgba(178, 178, 178, 0.7);
+}
+
+#python-logo {
+    background-image: url('../../assets/images/python-logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-color: rgb(55, 111, 159);
+    box-shadow: inset 0 0 40px rgba(55, 111, 159, 0.5), 0 0 40px rgba(55, 111, 159, 0.088);
+}
+
+#python-logo:hover {
+    box-shadow: 0 0 70px rgba(55, 111, 159, 0.7);
+}
+
+#java-logo {
+    background-image: url('../../assets/images/java-logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    border-color: rgb(231, 111, 0);
+    box-shadow: inset 0 0 40px rgba(231, 111, 0, 0.5), 0 0 40px rgba(231, 111, 0, 0.088);
+}
+
+#java-logo:hover {
+    box-shadow: 0 0 70px rgba(231, 111, 0, 0.5);
+}
+
+#cs-logo {
+    background-image: url('../../assets/images/cs-logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-color: rgb(100, 0, 255);
+    box-shadow: inset 0 0 40px rgba(100, 0, 255, 0.5), 0 0 40px rgba(100, 0, 255, 0.088);
+}
+
+#cs-logo:hover {
+    box-shadow: 0 0 70px rgba(100, 0, 255, 0.5);
+}
+
+#mysql-logo {
+    background-image: url('../../assets/images/mysql-logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-color: rgb(0, 144, 183);
+    box-shadow: inset 0 0 40px rgba(0, 144, 183, 0.5), 0 0 40px rgba(0, 144, 183, 0.088);
+}
+
+#mysql-logo:hover {
+    box-shadow: 0 0 70px rgba(0, 144, 183, 0.7);
+}
+
+#postgre-logo {
+    background-image: url('../../assets/images/postgresql-logo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    border-color: rgb(77, 157, 221);
+    box-shadow: inset 0 0 40px rgba(77, 157, 221, 0.5), 0 0 40px rgba(77, 157, 221, 0.088);
+}
+
+#postgre-logo:hover {
+    box-shadow: 0 0 70px rgba(77, 157, 221, 0.5);
+}
+
