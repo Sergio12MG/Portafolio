@@ -1,0 +1,107 @@
+/* Contenedor principal */
+#projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+#gradient-exit {
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 98, 255, 0) 0%, rgba(0, 98, 255, 0.1) 25%, rgba(0, 98, 255, 0.508) 100%);
+}
+
+/* Contenedor con el h1 y el p */
+.cont-txt {
+    text-align: center;
+    margin: 2rem;
+    h1 {
+        font-size: 3rem;
+        font-weight: 100;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+}
+
+/* Contenedor principal de los proyectos */
+.cont-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1300px;
+    align-items: stretch; /* Esencial para que todas las p-card tengan la misma altura */
+    margin-bottom: 2rem;
+}
+
+/* Estilo para la tarjeta p-card en sí */
+/* Se aplican los estilos a la clase interna de PrimeNG ya que las p-card son componentes */
+.project-card { /* Se usa la clase interna .p-card que PrimeNG añade, junto con la clase personalizada */
+    display: flex !important;
+    flex-direction: column;
+    height: 100%; /* La tarjeta debe ocupar la altura completa de su celda de grid */
+}
+
+.project-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Sobrescribir estilos internos de PrimeNG para la tarjeta */
+:host ::ng-deep .p-card {
+    box-shadow: 0 0 20px rgba(0, 98, 255, 0.5);
+}
+
+/* Sobrescribir estilos internos de PrimeNG para el cuerpo de la tarjeta */
+:host ::ng-deep .p-card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Es importante que el body también ocupe todo el espacio vertical disponible */
+}
+
+/* Sobrescribir estilos internos de PrimeNG para el contenido de la tarjeta */
+/* El contenido principal de la tarjeta, que incluye título, subtítulo y la descripción */
+:host ::ng-deep .p-card-content {
+    flex-grow: 1; /* Permite que el contenido principal (descripción, etc.) crezca y ocupe el espacio */
+    display: flex;
+    flex-direction: column; /* Asegura que el título, subtítulo y descripción se apilen correctamente */
+}
+
+/* Descripción de la tarjeta - debe crecer para empujar el footer */
+.card-description {
+    flex-grow: 1; /* Hace que la descripción ocupe el espacio restante */
+    margin-bottom: 1rem; /* Puedes ajustar este margen */
+}
+
+/* Sobrescribir estilos internos de PrimeNG para el footer de la tarjeta */
+:host ::ng-deep .p-card-footer {
+    margin-top: auto; /* Esta es la propiedad clave para empujar el footer hacia abajo */
+    padding-top: 1rem; /* Añade un poco de espacio si lo deseas */
+    display: flex; /* Asegura que el contenido del footer pueda usar flexbox */
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+}
+
+/* Contenido del footer para el botón */
+.footer-content {
+    /* Las clases de PrimeFlex/Tailwind como 'flex gap-4 mt-1' ya te dan la alineación interna. */
+    /* Si no estuvieras usando PrimeFlex, podrías poner: */
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* Estilos para el subtítulo */
+:host ::ng-deep .p-card-subtitle {
+    padding-top: 10px;
+}
+
