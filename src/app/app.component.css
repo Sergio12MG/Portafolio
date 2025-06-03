@@ -1,5 +1,6 @@
+/* Estilo para el contenedor principal */
 :host {
-  display: block;
+  display: block; /* Hace que el contenedor ocupe toda la altura de la pantalla */
   position: relative;
-  height: 100vh;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
 }

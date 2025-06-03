@@ -1,58 +1,63 @@
 /* Contenedor principal */
 #projects-section {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Los elementos hijos se disponen en columna */
+    /* Alineación central en los ejes x e y */
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    padding-top: 1rem;
+    gap: 1rem; /* Espacio entre los elementos */
+    padding-top: 1rem; /* Relleno superior */
 }
 
+/* Gradiente inferior */
 #gradient-exit {
-  height: 70px;
-  width: 100%;
+  height: 70px; /* Altura del contenedor */
+  width: 100%; /* Debe ocupar todo el ancho */
+  /* Combinación de 3 tonos */
   background: linear-gradient(to bottom, rgba(0, 98, 255, 0) 0%, rgba(0, 98, 255, 0.1) 25%, rgba(0, 98, 255, 0.508) 100%);
 }
 
 /* Contenedor con el h1 y el p */
 .cont-txt {
-    text-align: center;
-    margin: 2rem;
+    text-align: center; /* Se alinea centralmente el texto */
+    margin: 2rem; /* Márgenes */
     h1 {
-        font-size: 3rem;
-        font-weight: 100;
-        letter-spacing: 1px;
-        margin: 0;
+        font-size: 3rem; /* Tamaño de fuente */
+        font-weight: 100; /* Peso de fuente */
+        letter-spacing: 1px; /* Espaciado entre las letras */
+        margin: 0; /* Sin margen */
     }
     p {
-        font-size: 1.2rem;
-        font-weight: 100;
+        font-size: 1.2rem; /* Tamaño de fuente */
+        font-weight: 100; /*  Peso de fuente */
     }
 }
 
 /* Contenedor principal de los proyectos */
 .cont-proyectos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    gap: 2.5rem;
-    width: 100%;
-    max-width: 1300px;
+    display: grid; /* Utiliza la organización por cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); /* Cuadrícula de 3 columnas de igual ancho */
+    gap: 2.5rem; /* Espacio entre las tarjetas */
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 1300px; /* Ancho máximo */
     align-items: stretch; /* Esencial para que todas las p-card tengan la misma altura */
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; /* Margen inferior */
 }
 
 /* Estilo para la tarjeta p-card en sí */
 /* Se aplican los estilos a la clase interna de PrimeNG ya que las p-card son componentes */
 .project-card { /* Se usa la clase interna .p-card que PrimeNG añade, junto con la clase personalizada */
-    display: flex !important;
-    flex-direction: column;
+    display: flex !important; /*  La tarjeta debe ocupar el espacio completo de su celda de grid */
+    flex-direction: column; /* Los elementos hijos se disponen en columna */
     height: 100%; /* La tarjeta debe ocupar la altura completa de su celda de grid */
 }
 
+/* Estilo para la imagen */
 .project-img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
+    width: 100%; /* Debe ocupar el ancho de la tarjeta */
+    max-height: 200px; /* La imagen no debe superar 200px de alto */
+    object-fit: cover; /* La imagen se ajusta al tamaño de la tarjeta */
+    /* Bordes superiores redondeados */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }

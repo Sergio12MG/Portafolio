@@ -1,170 +1,193 @@
+/* Contenedor principal */
 #contact-section {
-    background-color: rgb(19, 30, 38);
-    padding: 2rem 0 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
+    background-color: rgb(19, 30, 38); /* Color oscuro para el fondo */
+    padding: 2rem 0 0 0; /* Relleno interno (2rem para la parte superior y 0 para las demás direcciones) */
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Los elementos hijos se disponen en columna */
+    justify-content: center; /* Centra los elementos hijos verticalmente */
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    gap: 4rem; /* Espacio entre los elementos */
 }
 
+/* Este elemento contiene al texto y el formulario */
 #main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
+    display: flex; /* Utiliza flexbox */
+    flex-direction: row; /* Alinea los elementos horizontalmente */
+    justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    gap: 4rem; /* Espacio entre los elementos */
 }
 
+/* Gradiente inferior */
 #gradient-exit {
-  height: 70px;
-  width: 100%;
+  height: 70px; /* Altura de la barra */
+  width: 100%; /* Ocupa el ancho completo */
+  /* Combinación de 3 tonos */
   background: linear-gradient(to bottom, rgba(0, 98, 255, 0) 0%, rgba(0, 98, 255, 0.1) 25%, rgba(0, 98, 255, 0.608) 100%);
 }
 
+/* Contenedor con el texto */
 #cont-txt {
-    padding: 2rem 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem 0; /* Espacio superior e inferior interno de 2rem */
+    text-align: center; /* Para alinear el texto en el centro */
+    display: flex; /*  Utiliza flexbox */
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center; /*  Alinea los elementos horizontalmente en el centro */
+    align-items: center; /*  Alinea los elementos verticalmente en el centro */
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: 100;
-    letter-spacing: 1px;
-    padding: 10px;
-    margin: 0;
+    font-size: 3rem; /* Tamaño de fuente */
+    font-weight: 100; /* Peso de fuente ligero */
+    letter-spacing: 1px; /* Espaciado entre las letras */
+    padding: 10px; /* Relleno interno */
+    margin: 0; /* Sin margen */
 }
 
 p {
-    font-size: 1.2rem;
-    font-weight: 100;
-    padding: 10px;
+    font-size: 1.2rem; /* Tamaño de fuente */
+    font-weight: 100; /* Peso de fuente ligero */
+    padding: 10px; /* Relleno interno */
 }
 
+/* Línea divisoria entre el texto y los íconos de contacto */
 hr {
-    margin: 2rem 0;
-    width: 60%;
-    border-color: rgb(39, 112, 180);
-    border-style: solid;
-    box-shadow: 0 0 20px 10px rgba(8, 124, 233, 0.358);
+    margin: 2rem 0; /* Márgenes superiores e inferiores */
+    width: 60%; /* Ocupa un 60% del ancho dentro del contenedor padre (cont-txt) */
+    border-color: rgb(39, 112, 180); /*  Color de la línea */
+    border-style: solid; /* Estilo de la línea */
+    box-shadow: 0 0 20px 10px rgba(8, 124, 233, 0.358); /* Sombra de la línea */
 }
 
 h3 {
-    font-size: 2rem;
-    font-weight: 100;
-    letter-spacing: 1px;
-    padding: 10px;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
+    font-size: 2rem; /* Tamaño de la fuente */
+    font-weight: 100; /* Peso de la fuente */
+    letter-spacing: 1px; /* Espaciado entre las letras */
+    padding: 10px; /* Relleno interno */
+    margin-top: 0.5rem; /* Margen superior */
+    margin-bottom: 0; /* Sin margen inferior */
 }
 
+/* Estilos compartidos para los botones de contacto */
 .contact-btns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Los elementos hijos se disponen en columna */
+    justify-content: center; /* Centra los elementos hijos verticalmente */
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    padding: 10px; /* Relleno */
+    margin: 10px; /* Márgenes */
+    /* Ancho y altura de la misma medida */
     width: 80px;
     height: 80px;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 20px;
+    border-style: solid; /* Estilo del borde*/
+    border-width: 3px; /* Grosor del borde */
+    border-radius: 20px; /* Redondez de los bordes del contenedor */
 }
 
+/* Contenedor con los botones de contacto */
 #cont-logos {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Utiliza flexbox */
+    flex-direction: row; /* Los elementos hijos se disponen en fila */
+    /* Alineación en el centro en los ejes x e y */
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
-    gap: 2rem;
+    padding: 10px; /* Relleno */
+    margin: 10px; /* Márgenes */
+    gap: 2rem; /* Espacio entre los elementos */
 }
 
+/* Botón de correo */
 #correo {
-    background-image: url('../../assets/images/mail-logo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50px;
-    border-color: rgb(255, 255, 255);
-    box-shadow: inset 0 0 40px rgba(180, 180, 180, 0.5), 0 0 40px rgba(180, 180, 180, 0.088);
+    background-image: url('../../assets/images/mail-logo.png'); /* Imagen de fondo para el contenedor */
+    background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
+    background-position: center; /*  Centra la imagen */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-size: 50px; /* Tamaño de la imagen */
+    border-color: rgb(255, 255, 255); /* Color del borde */
+    box-shadow: inset 0 0 40px rgba(180, 180, 180, 0.5), 0 0 40px rgba(180, 180, 180, 0.088); /* Sombra interna */
 }
 
+/* Hover para el botón de correo */
 #correo:hover {
-    box-shadow: 0 0 50px rgba(180, 180, 180, 0.4);
-    cursor: pointer;
+    box-shadow: 0 0 50px rgba(180, 180, 180, 0.4); /* Aplicar una sombra exterior */
+    cursor: pointer; /* Cursor de puntero */
 }
 
+/* Botón de Discord */
 #discord {
-    background-image: url('../../assets/images/discord-logo.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50px;
-    border-color: rgb(96, 108, 236);
-    box-shadow: inset 0 0 40px rgba(96, 108, 236, 0.5), 0 0 40px rgba(96, 108, 236, 0.088);
+    background-image: url('../../assets/images/discord-logo.svg'); /* Imagen de fondo para el contenedor */
+    background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-size: 50px; /* Tamaño de la imagen */
+    border-color: rgb(96, 108, 236); /* Color del borde */
+    box-shadow: inset 0 0 40px rgba(96, 108, 236, 0.5), 0 0 40px rgba(96, 108, 236, 0.088); /* Sombra interna */
 }
 
+/*  Hover para el botón de Discord */
 #discord:hover {
     box-shadow: 0 0 50px rgba(96, 108, 236, 0.4);
     cursor: pointer;
 }
 
+/* Contenedor del formulario */
 #cont-form {
-    margin-left: 2rem;
-    display: flex;
-    flex-direction: column;
+    margin-left: 2rem; /* Margen izquierdo */
+    display: flex; /*  Utiliza flexbox */
+    flex-direction: column; /* Los elementos se organizan verticalmente */
+    /* Se centran en el eje x e y */
     justify-content: center;
     align-items: center;
 }
 
+/* Estilos para los campos de entrada de texto */
 .input-txt {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 15px;
-    font-size: 20px;
-    border-radius: 15px;
-    border: solid 3px rgb(39, 112, 180);
-    background-color: rgb(26, 42, 54);
-    text-align: center;
+    width: 100%; /* Ocupan todo el ancho del contenedor */
+    margin-bottom: 15px; /* Márgenes inferiores */
+    padding: 15px; /* Relleno */
+    font-size: 20px; /* Tamaño de la fuente */
+    border-radius: 15px; /* Redondez de los bordes */
+    border: solid 3px rgb(39, 112, 180); /* Tipo, grosor y color de los bordes */
+    background-color: rgb(26, 42, 54); /* Color de fondo */
+    text-align: center; /* Se alinea el texto al centro */
 }
 
+/* Cuando el campo de entrada de texto tiene el foco */
 .input-txt:focus {
-    box-shadow: 0 0 50px rgba(39, 112, 180, 0.7);
+    box-shadow: 0 0 50px rgba(39, 112, 180, 0.7); /* Aplicar una sombra exterior */
 }
 
+/* Estilos para el textarea */
 textarea {
+    /* Medidas mínimas y máximas para limitar el tamaño definido por el usuario */
     min-width: 450px;
     min-height: 100px;
-    height: 100px;
+    height: 100px; /* Altura por defecto */
     max-width: 450px;
     max-height: 300px;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 15px;
-    padding: 15px;
-    border-radius: 15px;
-    border: solid 3px rgb(39, 112, 180);
-    background-color: rgb(26, 42, 54);
+    font-size: 20px; /* Tamaño de la fuente */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente */
+    margin-bottom: 15px; /* Margen inferior */
+    padding: 15px; /* Relleno */
+    border-radius: 15px; /* Redondez de los bordes */
+    border: solid 3px rgb(39, 112, 180); /*  Tipo, grosor y color de los bordes */
+    background-color: rgb(26, 42, 54); /* Color de fondo */
 }
 
+/* Cuando el textarea tiene el foco */
 textarea:focus {
-    box-shadow: 0 0 50px rgba(39, 112, 180, 0.7);
+    box-shadow: 0 0 50px rgba(39, 112, 180, 0.7); /* Aplicar una sombra exterior */
 }
 
+/* Se sobreescriben los estilos internos de PrimeNG para el botón de envío del formulario */
 :host ::ng-deep .p-button {
-    width: auto;
-    font-size: 20px;
-    padding: 10px 20px;
-    margin-top: 2rem;
+    width: auto; /* Ancho automático */
+    font-size: 20px; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Relleno vertical de 10px y horizontal de 20px */
+    margin-top: 2rem; /* Margen superior */
 }
 
+/* Hover para el botón de envío del formulario */
 :host ::ng-deep .p-button:hover {
-    box-shadow: 0 0 50px rgba(13, 193, 76, 0.7);
+    box-shadow: 0 0 50px rgba(13, 193, 76, 0.7); /* Sombra */
 }

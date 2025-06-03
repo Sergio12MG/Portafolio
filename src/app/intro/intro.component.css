@@ -1,76 +1,98 @@
 /* Contenedor principal */
 #intro-section {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
+  position: relative; /* Pocisionamiento relativo para que ocupe toda la pantalla */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
+/* Estilos generales para los enlaces */
 a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none; /* Sin subrayado */
+  color: white; /* Color que combine con el resto del texto normal */
 }
 
 /* Fondo de video */
 .video-fondo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.5;
+  position: absolute; /* Posicionamiento absoluto */
+  top: 0; /* Se adhiere a la parte superior */
+  left: 0; /* Se adhiere a la parte izquierda */
+  min-width: 100%; /* Ocupa todo el ancho */
+  min-height: 100%; /* Ocupa toda la altura */
+  object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+  z-index: -1; /* Pone el video detras de todo el contenido */
+  opacity: 0.5; /* Opacidad del video */
 }
 
 /* Contenido del intro centrado verticalmente */
 .contenido {
+  /* Posicionamiento relativo para que est  encima del video */
   position: relative;
+  /* Z-index para que est  encima del video */
   z-index: 1;
   display: flex;
+  /* Alinea los elementos en columna */
   flex-direction: column;
+  /* Centra los elementos verticalmente */
   justify-content: center;
+  /* Centra los elementos horizontalmente */
   align-items: center;
+  /* Ocupa toda la altura disponible */
   height: 100%;
+  /* Relleno en los lados */
   padding: 2rem;
+  /* Color de texto blanco */
   color: white;
+  /* Alinea el texto en el centro */
   text-align: center;
 }
 
+/* Estilos para el contenedor del texto */
 .cont-txt {
+  /* Margen superior y padding para que el texto est  bien centrado */
   margin-top: 3rem;
   margin-bottom: 0.5rem;
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 30px; /* Redondez de los bordes */
+  /* Estilos para el h1 */
   h1 {
-    font-weight: 100;
-    margin: 0 10px;
-    padding: 10px;
-    font-size: 30px;
+    font-weight: 100; /* Peso de la fuente */
+    margin: 0 10px; /* M  rgenes laterales */
+    padding: 10px; /* Relleno */
+    font-size: 30px; /* Tama o de la fuente */
   }
+  /* Estilos para el p */
   p {
-    font-weight: 500;
-    margin: 0 0 30px 0;
-    padding: 10px;
-    font-size: 50px;
+    font-weight: 500; /* Peso de la fuente */
+    margin: 0 0 30px 0; /* Margen inferior */
+    padding: 10px; /* Relleno */
+    font-size: 50px; /* Tama o de la fuente */
   }
+  /* Sombra para el h1 y el p */
   h1, p {
-    text-shadow: 0 0 10px rgba(0, 208, 255, 0.8);
+    text-shadow: 0 0 10px rgba(0, 208, 255, 0.8); /* Sombra con color azul */
   }
 }
 
-/* Contenedor con el texto en escritura */
+/* Contiene el texto en escritura */
 .cont-ext {
+  /* Flexbox para centrar los elementos en el eje x e y */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Margen superior e inferior y padding */
   margin: 1rem;
   padding: 30px;
+  /* Color de fondo */
   background: #0f343d;
+  /* Opacidad */
   opacity: 0.9;
+  /* Redondez de los bordes */
   border-radius: 30px;
+  /* Sombra exterior */
   box-shadow: 0 0 70px 30px rgba(0, 123, 255, 0.5);
 }
 
+/* Contenedor directo del texto en escritura */
 .cont-escritor {
   display: inline-block; /* Ajusta el contenedor al tamaño del texto */
   overflow: hidden; /* Oculta el texto que aún no se ha "escrito" */
@@ -79,9 +101,9 @@ a {
   /* La animación 'typing' revela el texto */
   animation:
       typing 2s steps(20, end) forwards, /* 'forwards' mantiene el estado final */
-      blink-caret .75s step-end infinite;
+      blink-caret .75s step-end infinite; /*  La animación 'blink-caret' parpadea el cursor */
   font-size: 2rem; /* Tamaño del texto */
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Source Code Pro', monospace; /* Fuente */
   color: #eee; /* Color del texto */
   max-width: 100%; /* Asegura que el contenedor no exceda el ancho de la pantalla */
 }
@@ -113,40 +135,43 @@ a {
   font-weight: 700;
 }
 
+/* Contenedor con botones */
 .cont-btns {
-  display: flex;
+  display: flex; /* Utiliza flexbox */
+  /* Alineación central en los ejes x e y */
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 0;
-  padding: 10px;
+  gap: 2rem; /* Espacio entre los botones */
+  margin-top: 2rem; /* Margen superior */
+  margin-bottom: 0; /* Sin margen inferior */
+  padding: 10px; /* Relleno */
 }
 
+/* Estilos específicos para los botones */
 .btn {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 1rem;
-  padding: 15px 20px;
-  border-radius: 40px;
+  font-size: 20px; /* Tamaño de la fuente */
+  font-weight: 600; /* Peso de la fuente */
+  margin: 1rem; /* Márgenes */
+  padding: 15px 20px; /* Relleno vertical de 15px y horizontal de 20px */
+  border-radius: 40px; /* Redondez de los bordes */
 }
 
 #btn-1 {
   background-color: rgb(39, 112, 180);
-  --p-ripple-background: rgba(91, 176, 255, 0.3);
+  --p-ripple-background: rgba(91, 176, 255, 0.3); /* Efecto de click */
 }
 
 #btn-2 {
   background-color: rgba(51, 185, 100, 0.118);
   border: 3px solid rgb(53, 179, 93);
-  --p-ripple-background: rgba(59, 180, 103, 0.3);
+  --p-ripple-background: rgba(59, 180, 103, 0.3); /* Efecto de click */
 }
-
+/* Cuando se pasa por encima */
 #btn-1:hover {
-  box-shadow: 0 0 40px 10px rgba(0, 132, 255, 0.7);
-  transform: scale(1.05);
-  transition: 0.3s ease;
-  cursor: pointer;
+  box-shadow: 0 0 40px 10px rgba(0, 132, 255, 0.7); /* Sombra */
+  transform: scale(1.05); /* Efecto de zoom */
+  transition: 0.3s ease; /* Transición suave con una duración de 0.3 segundos */
+  cursor: pointer; /* Cursor de puntero */
 }
 
 #btn-2:hover {
@@ -156,11 +181,13 @@ a {
   cursor: pointer;
 }
 
+/* Gradiente en la parte inferior */
 #gradient-exit {
-  position: absolute;
-  bottom: 0;          /* Posicionarlo en la parte inferior del intro-wrapper */
-  left: 0;            /* Asegurar que se alinee a la izquierda */
-  height: 100px;
-  width: 100%;
+  position: absolute; /* Posicionamiento absoluto para que ocupe todo el intro-wrapper */
+  bottom: 0; /* Posicionarlo en la parte inferior del intro-wrapper */
+  left: 0; /* Asegurar que se alinee a la izquierda */
+  height: 100px; /* Altura del contenedor */
+  width: 100%; /* Debe ocupar todo el ancho */
+  /* Combinación de 3 tonos */
   background: linear-gradient(to bottom, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 0.15) 25%, rgba(18, 18, 18, 0.5) 50%, rgba(18, 18, 18, 0.7) 70%, rgb(18, 18, 18) 100%);
 }

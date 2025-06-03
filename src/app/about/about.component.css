@@ -1,225 +1,263 @@
+/* Estilos para la sección principal "Acerca de" */
 #about-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding-bottom: 2rem;
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: row; /* Los elementos hijos se disponen en fila */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    align-items: center; /* Centra los elementos hijos verticalmente */
+    gap: 2rem; /* Espacio entre los elementos hijos */
+    padding-bottom: 2rem; /* Relleno en la parte inferior de la sección */
 }
 
+/* Estilos para la barra de introducción con un degradado de color */
 #gradient-intro {
-  height: 70px;
-  width: 100%;
+  height: 70px; /* Altura fija */
+  width: 100%; /* Ancho completo */
+  /* Fondo con un degradado lineal de transparente a un azul semi-transparente */
   background: linear-gradient(to top, rgba(0, 98, 255, 0) 0%, rgba(0, 98, 255, 0.1) 25%, rgba(0, 98, 255, 0.508) 100%);
 }
 
+/* Estilos para los contenedores de texto (descripción) */
 .cont-txt {
-    margin: 15px;
-    margin-top: 0;
-    padding: 20px;
-    padding-top: 0;
-    width: 30%;
-    text-align: left;
+    margin: 15px; /* Margen exterior */
+    margin-top: 0; /* Sin margen superior */
+    padding: 20px; /* Relleno interior */
+    padding-top: 0; /* Sin relleno superior */
+    width: 30%; /* Ancho del contenedor */
+    text-align: left; /* Alineación del texto a la izquierda */
+
+    /* Estilos para los encabezados H1 dentro de los contenedores de texto */
     h1 {
-        font-size: 3rem;
-        font-weight: 100;
-        letter-spacing: 1px;
+        font-size: 3rem; /* Tamaño de fuente grande */
+        font-weight: 100; /* Peso de fuente ligero */
+        letter-spacing: 1px; /* Espaciado entre letras */
     }
+    /* Estilos para los párrafos dentro de los contenedores de texto */
     p {
-        font-size: 1.2rem;
-        font-weight: 100;
+        font-size: 1.2rem; /* Tamaño de fuente para párrafos */
+        font-weight: 100; /* Peso de fuente ligero */
     }
 }
 
+/* Estilos para el contenedor de la sección "Tech Stack" (tecnologías) */
 #tech-stack-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 1rem;
-    width: 50%;
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Los elementos hijos se disponen en columna */
+    justify-content: center; /* Centra los elementos hijos verticalmente (debido a la dirección de columna) */
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    gap: 10px; /* Espacio entre los elementos hijos */
+    padding: 1rem; /* Relleno interior */
+    width: 50%; /* Ancho del contenedor */
+
+    /* Estilos para el encabezado H2 dentro del contenedor de "Tech Stack" */
     h2 {
-        font-size: 2rem;
-        font-weight: 100;
-        letter-spacing: 1px;
+        font-size: 2rem; /* Tamaño de fuente */
+        font-weight: 100; /* Peso de fuente ligero */
+        letter-spacing: 1px; /* Espaciado entre letras */
     }
 }
 
+/* Estilos para los subcontenedores que agrupan los logos de tecnologías */
 .subconts {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0 2rem;
+    display: flex; /* Utiliza flexbox */
+    flex-direction: row; /* Los elementos hijos se disponen en fila */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    align-items: center; /* Centra los elementos hijos verticalmente */
+    gap: 0.5rem; /* Espacio entre los logos */
+    padding: 0 2rem; /* Relleno horizontal */
 }
 
+/* Estilos base para cada logo de tecnología */
 .logo-tech {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    width: 60px;
-    height: 60px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 20px;
+    display: flex; /* Utiliza flexbox para centrar contenido interno (si lo hubiera) */
+    flex-direction: column; /* Disposición interna en columna */
+    justify-content: center; /* Centrado vertical interno */
+    align-items: center; /* Centrado horizontal interno */
+    padding: 10px; /* Relleno interior */
+    margin: 10px; /* Margen exterior */
+    width: 80px; /* Ancho del logo */
+    height: 80px; /* Altura del logo */
+    background-size: cover; /* Asegura que la imagen de fondo cubra el área, puede recortar */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    border-style: solid; /* Estilo de borde sólido */
+    border-width: 3px; /* Ancho del borde */
+    border-radius: 20px; /* Bordes redondeados */
 }
 
+/* Estilos específicos para el logo de HTML */
 #html-logo {
-    background-image: url('../../assets/images/html-logo.svg');
-    background-size: 50px;
-    border-color: rgb(239, 101, 42);
+    background-image: url('../../assets/images/html-logo.svg'); /* Imagen de fondo */
+    background-size: 50px; /* Tamaño de la imagen de fondo */
+    border-color: rgb(239, 101, 42); /* Color del borde (naranja HTML) */
+    /* Sombra interior y exterior sutil */
     box-shadow: inset 0 0 40px rgba(239, 101, 42, 0.5), 0 0 40px rgba(239, 101, 42, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de HTML */
 #html-logo:hover {
-    box-shadow: 0 0 70px rgba(239, 101, 42, 0.7);
+    box-shadow: 0 0 70px rgba(239, 101, 42, 0.7); /* Sombra más pronunciada */
 }
 
+/* Estilos específicos para el logo de CSS */
 #css-logo {
     background-image: url('../../assets/images/css-logo.svg');
     background-size: 50px;
-    border-color: rgb(35, 135, 194);
+    border-color: rgb(35, 135, 194); /* Color del borde (azul CSS) */
     box-shadow: inset 0 0 40px rgba(35, 135, 194, 0.5), 0 0 40px rgba(35, 135, 194, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de CSS */
 #css-logo:hover {
     box-shadow: 0 0 70px rgba(35, 135, 194, 0.7);
 }
 
+/* Estilos específicos para el logo de JavaScript */
 #js-logo {
     background-image: url('../../assets/images/javascript-logo.svg');
     background-size: 50px;
-    border-color: rgb(255, 222, 37);
+    border-color: rgb(255, 222, 37); /* Color del borde (amarillo JS) */
     box-shadow: inset 0 0 40px rgba(255, 222, 37, 0.5), 0 0 40px rgba(255, 222, 37, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de JavaScript */
 #js-logo:hover {
     box-shadow: 0 0 70px rgba(255, 222, 37, 0.7);
 }
 
+/* Estilos específicos para el logo de PHP */
 #php-logo {
     background-image: url('../../assets/images/php-logo.png');
-    background-size: 60px;
-    border-color: rgb(137, 147, 190);
+    background-size: 60px; /* Ligeramente más grande para compensar el aspect ratio del PNG */
+    border-color: rgb(137, 147, 190); /* Color del borde (morado/azul PHP) */
     box-shadow: inset 0 0 40px rgba(137, 147, 190, 0.5), 0 0 40px rgba(137, 147, 190, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de PHP */
 #php-logo:hover {
     box-shadow: 0 0 70px rgba(137, 147, 190, 0.7);
 }
 
+/* Estilos específicos para el logo de Angular */
 #angular-logo {
     background-image: url('../../assets/images/angular-logo.svg');
     background-size: 50px;
-    border-color: rgb(226, 50, 55);
+    border-color: rgb(226, 50, 55); /* Color del borde (rojo Angular) */
     box-shadow: inset 0 0 40px rgba(226, 50, 55, 0.5), 0 0 40px rgba(226, 50, 55, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de Angular */
 #angular-logo:hover {
     box-shadow: 0 0 70px rgba(226, 50, 55, 0.7);
 }
 
+/* Estilos específicos para el logo de Django */
 #django-logo {
     background-image: url('../../assets/images/django-logo.svg');
-    background-size: 40px;
-    border-color: rgb(43, 169, 119);
+    background-size: 40px; /* Ligeramente más pequeño */
+    border-color: rgb(43, 169, 119); /* Color del borde (verde Django) */
     box-shadow: inset 0 0 40px rgba(43, 169, 119, 0.5), 0 0 40px rgba(43, 169, 119, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de Django */
 #django-logo:hover {
     box-shadow: 0 0 70px rgba(43, 169, 119, 0.7);
 }
 
+/* Estilos específicos para el logo de Node.js */
 #nodejs-logo {
     background-image: url('../../assets/images/nodejs-logo.svg');
     background-size: 50px;
-    border-color: rgb(0, 212, 134);
+    border-color: rgb(0, 212, 134); /* Color del borde (verde Node.js) */
     box-shadow: inset 0 0 40px rgba(0, 212, 134, 0.5), 0 0 40px rgba(0, 212, 134, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de Node.js */
 #nodejs-logo:hover {
     box-shadow: 0 0 70px rgba(0, 212, 134, 0.7);
 }
 
+/* Estilos específicos para el "logo" de Express.js (usa texto en lugar de imagen) */
 #express-logo {
+    /* Estilos para el texto "EX" dentro del logo de Express.js */
     h2 {
-        font-size: 50px;
-        font-weight: 100;
-        letter-spacing: 1px;
-        text-align: center;
-        margin: 0;
-        padding: 0;
+        font-size: 50px; /* Tamaño de fuente grande para el texto "EX" */
+        font-weight: 100; /* Peso de fuente ligero */
+        letter-spacing: 1px; /* Espaciado entre letras */
+        text-align: center; /* Alineación del texto al centro */
+        margin: 0; /* Sin margen */
+        padding: 0; /* Sin relleno */
     }
-    border-color: rgb(255, 255, 255);
-    box-shadow: inset 0 0 40px rgba(178, 178, 178, 0.5), 0 0 40px rgba(178, 178, 178, 0.088);
-    cursor: default;
+    border-color: rgb(255, 255, 255); /* Color del borde (blanco) */
+    box-shadow: inset 0 0 40px rgba(178, 178, 178, 0.5), 0 0 40px rgba(178, 178, 178, 0.088); /* Sombra gris */
+    cursor: default; /* Cursor por defecto ya que no es un enlace/botón típico */
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de Express.js */
 #express-logo:hover {
     box-shadow: 0 0 70px rgba(178, 178, 178, 0.7);
 }
 
+/* Estilos específicos para el logo de Python */
 #python-logo {
     background-image: url('../../assets/images/python-logo.svg');
     background-size: 50px;
-    border-color: rgb(55, 111, 159);
+    border-color: rgb(55, 111, 159); /* Color del borde (azul Python) */
     box-shadow: inset 0 0 40px rgba(55, 111, 159, 0.5), 0 0 40px rgba(55, 111, 159, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de Python */
 #python-logo:hover {
     box-shadow: 0 0 70px rgba(55, 111, 159, 0.7);
 }
 
+/* Estilos específicos para el logo de Java */
 #java-logo {
     background-image: url('../../assets/images/java-logo.png');
-    background-size: 40px;
-    border-color: rgb(231, 111, 0);
+    background-size: 40px; /* Ajuste para la imagen PNG */
+    border-color: rgb(231, 111, 0); /* Color del borde (naranja Java) */
     box-shadow: inset 0 0 40px rgba(231, 111, 0, 0.5), 0 0 40px rgba(231, 111, 0, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de Java */
 #java-logo:hover {
-    box-shadow: 0 0 70px rgba(231, 111, 0, 0.5);
+    box-shadow: 0 0 70px rgba(231, 111, 0, 0.5); /* Sombra más sutil */
 }
 
+/* Estilos específicos para el logo de C# (CS) */
 #cs-logo {
     background-image: url('../../assets/images/cs-logo.svg');
     background-size: 50px;
-    border-color: rgb(100, 0, 255);
+    border-color: rgb(100, 0, 255); /* Color del borde (morado C#) */
     box-shadow: inset 0 0 40px rgba(100, 0, 255, 0.5), 0 0 40px rgba(100, 0, 255, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de C# */
 #cs-logo:hover {
     box-shadow: 0 0 70px rgba(100, 0, 255, 0.5);
 }
 
+/* Estilos específicos para el logo de MySQL */
 #mysql-logo {
     background-image: url('../../assets/images/mysql-logo.svg');
     background-size: 50px;
-    border-color: rgb(0, 144, 183);
+    border-color: rgb(0, 144, 183); /* Color del borde (azul MySQL) */
     box-shadow: inset 0 0 40px rgba(0, 144, 183, 0.5), 0 0 40px rgba(0, 144, 183, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de MySQL */
 #mysql-logo:hover {
     box-shadow: 0 0 70px rgba(0, 144, 183, 0.7);
 }
 
+/* Estilos específicos para el logo de PostgreSQL */
 #postgre-logo {
     background-image: url('../../assets/images/postgresql-logo.svg');
     background-size: 50px;
-    border-color: rgb(77, 157, 221);
+    border-color: rgb(77, 157, 221); /* Color del borde (azul claro PostgreSQL) */
     box-shadow: inset 0 0 40px rgba(77, 157, 221, 0.5), 0 0 40px rgba(77, 157, 221, 0.088);
 }
 
+/* Efecto de sombra al pasar el ratón sobre el logo de PostgreSQL */
 #postgre-logo:hover {
     box-shadow: 0 0 70px rgba(77, 157, 221, 0.5);
 }
-
-
