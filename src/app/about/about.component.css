@@ -164,15 +164,15 @@
 }
 
 /* Estilos específicos para el logo de Node.js */
-#nodejs-logo {
-    background-image: url('../../assets/images/nodejs-logo.svg');
-    background-size: 50px;
+#vuejs-logo {
+    background-image: url('../../assets/images/vue-9.svg');
+    background-size: 60px;
     border-color: rgb(0, 212, 134); /* Color del borde (verde Node.js) */
     box-shadow: inset 0 0 40px rgba(0, 212, 134, 0.5), 0 0 40px rgba(0, 212, 134, 0.088);
 }
 
 /* Efecto de sombra al pasar el ratón sobre el logo de Node.js */
-#nodejs-logo:hover {
+#vuejs-logo:hover {
     box-shadow: 0 0 70px rgba(0, 212, 134, 0.7);
 }
 
